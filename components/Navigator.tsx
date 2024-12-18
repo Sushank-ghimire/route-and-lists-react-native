@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { Link, usePathname } from "expo-router";
 
 const Navigator = () => {
@@ -24,6 +24,15 @@ const Navigator = () => {
         href="/counter"
       >
         Counter
+      </Link>
+      <Link
+        style={[
+          styles.text,
+          pathname === "/tictactoe" && styles.activeText, // Example for another route
+        ]}
+        href="/tictactoe"
+      >
+        Game
       </Link>
     </View>
   );

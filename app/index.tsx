@@ -1,7 +1,7 @@
-import { ImageBackground, StyleSheet, View } from "react-native";
+import { ImageBackground, StyleSheet } from "react-native";
 import React from "react";
 import { StatusBar } from "react-native";
-import BgImage from "@/assets/bg.jpg";
+const BgImage = require("@/assets/bg.jpg");
 import Navigator from "@/components/Navigator";
 
 const HomeScreen = () => {
