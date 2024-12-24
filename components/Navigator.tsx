@@ -34,6 +34,15 @@ const Navigator = () => {
       >
         Game
       </Link>
+      <Link
+        style={[
+          styles.text,
+          pathname === "/profile" && styles.activeText, // Example for another route
+        ]}
+        href="/profile"
+      >
+        Profile
+      </Link>
     </View>
   );
 };
