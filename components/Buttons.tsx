@@ -7,6 +7,7 @@ import {
   View,
 } from "react-native";
 import React from "react";
+import { Link } from "expo-router";
 
 const Buttons = () => {
   return (
@@ -41,6 +42,12 @@ const Buttons = () => {
       >
         <Text style={styles.text}>Pressable Time</Text>
       </Pressable>
+
+      <TouchableOpacity style={styles.touchable}>
+        <Link style={styles.text} href={"/(screens)/flatlist"}>
+          Flat List
+        </Link>
+      </TouchableOpacity>
     </View>
   );
 };

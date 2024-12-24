@@ -10,7 +10,7 @@ const RootLayout = () => {
       <Stack screenOptions={{ headerShown: false }}>
         <StatusBar
           animated
-          barStyle={isDark ? "light-content" : "dark-content"} // Controls text color of the status bar (dark or light)
+          barStyle={isDark ? "dark-content" : "light-content"} // Controls text color of the status bar (dark or light)
           hidden={false} // Ensures the status bar is visible
           backgroundColor="white" // Background color for Android (iOS ignores this)
         />

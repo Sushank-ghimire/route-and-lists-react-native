@@ -8,7 +8,6 @@ import {
   Image,
   Text,
   Button,
-  Pressable,
   TouchableOpacity,
 } from "react-native";
 
