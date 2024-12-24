@@ -3,16 +3,12 @@ import React from "react";
 import { StatusBar } from "react-native";
 const BgImage = require("@/assets/bg.jpg");
 import Navigator from "@/components/Navigator";
+import Buttons from "@/components/Buttons";
 
 const HomeScreen = () => {
   return (
     <ImageBackground source={BgImage} style={styles.view}>
-      <StatusBar
-        animated
-        barStyle="dark-content" // Controls text color of the status bar (dark or light)
-        hidden={false} // Ensures the status bar is visible
-        backgroundColor="white" // Background color for Android (iOS ignores this)
-      />
+      <Buttons />
       <Navigator />
     </ImageBackground>
   );

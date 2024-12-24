@@ -9,9 +9,7 @@ const CircleWithCount = () => {
   };
 
   const decreasePress = () => {
-    if (count > 0) {
-      setCount((prev) => prev - 1);
-    }
+    setCount((prev) => prev - 1);
   };
 
   return (
@@ -24,7 +22,7 @@ const CircleWithCount = () => {
         </View>
         <View style={styles.buttonContainer}>
           <Button title="+" onPress={updatePress} />
-          <Button title="-" onPress={decreasePress} />
+          <Button title="-" onPress={decreasePress} disabled={count === 0} />
         </View>
       </View>
     </ScrollView>
