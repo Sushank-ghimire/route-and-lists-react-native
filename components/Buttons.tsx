@@ -48,6 +48,11 @@ const Buttons = () => {
           Flat List
         </Link>
       </TouchableOpacity>
+      <TouchableOpacity style={styles.touchable}>
+        <Link style={styles.text} href={"/products"}>
+          Products
+        </Link>
+      </TouchableOpacity>
     </View>
   );
 };
